@@ -1,0 +1,216 @@
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans Extra Bold";
+    src: url(./assets/fonts/static/PlusJakartaSans-ExtraBold.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    align-items: center;
+    background-color: hsl(210, 60%, 98%);
+    color: hsl(219, 12%, 42%);
+    display: flex;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    justify-content: center;
+}
+
+div.container {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: fit-content;
+    padding: 30px;
+    width: 730px;
+}
+
+.text {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text h1 {
+    color: hsl(224, 21%, 14%);
+    font-family: "Plus Jakarta Sans Extra Bold", sans-serif;
+    font-size: 26px;
+}
+
+.text h1 span {
+    background-color: hsl(219, 85%, 26%);
+    border-radius: 6px;
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    margin-left: 6px;
+    padding: 1px 10px;
+}
+
+.text p {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.text p:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+.notifications {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 100%;
+}
+
+img {
+    height: 46px;
+    width: 46px;
+}
+
+.card {
+    align-items: flex-start;
+    border-radius: 8px;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 18px;
+    width: 100%;
+}
+
+.card .content {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.unread {
+    background-color: hsl(211, 68%, 94%);
+}
+
+.red {
+    background-color: hsl(1, 90%, 64%);
+    border-radius: 50%;
+    display: inline-block;
+    height: 8px;
+    margin-bottom: 2px;
+    margin-left: 6px;
+    width: 8px;
+}
+
+.card .content span.name {
+    color: hsl(224, 21%, 14%);
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans Extra Bold", sans-serif;
+    font-weight: bold;
+}
+
+.card .content span.name:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+.card .content .time {
+    color: hsl(219, 14%, 63%);
+}
+
+.rizky .message {
+    border-radius: 4px;
+    border: 1px solid hsl(205, 33%, 90%);
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 20px;
+    transition: all 0.2s;
+}
+
+.rizky .message:hover {
+    background-color: hsl(205, 33%, 90%);
+    transition: all 0.2s;
+}
+
+.kimberly .content {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.kimberly .content .left {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: flex-start;
+}
+
+.kimberly .content .right img {
+    cursor: pointer;
+}
+
+.highlight {
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans Extra Bold", sans-serif;
+    font-weight: bold;
+}
+
+.highlight:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+.chess {
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans Extra Bold", sans-serif;
+    font-weight: bold;
+}
+
+.attribution {
+    display: none;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-height: 900px) {
+    body {
+        height: fit-content;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    div.container {
+        border-radius: 0;
+        font-size: 14px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .text h1 {
+        font-size: 20px;
+    }
+
+    .text h1 span {
+        font-size: 14px;
+    }
+}
